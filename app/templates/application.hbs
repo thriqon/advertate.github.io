@@ -1,5 +1,21 @@
+
+<strong>Enough space to the left</strong>
+
 <div class="container">
+  <span class="label label-danger">DANGER</span>
   {{#confirm-extension questionText='Do you really want to destroy the planet?' confirmText='Yes' declineText='No' confirmAction='destroyEarth'}}
     <button class="btn btn-danger">Destroy Earth</button>
+  {{/confirm-extension}}
+  <span class="label label-danger">DANGER</span>
+</div>
+
+<br>
+<br>
+
+
+<strong>Just a little bit of space to the left</strong>
+<div class="container-fluid">
+  {{#confirm-extension questionText='Do you really want to destroy the moon?' confirmText='Yes' declineText='No' confirmAction='destroyMoon'}}
+    <button class="btn btn-warning">Destroy Moon</button>
   {{/confirm-extension}}
 </div>
